@@ -1,0 +1,17 @@
+.centralize{
+align-content: center;
+vertical-align: center;
+text-align: center;
+}
+
+.addSpace
+{
+    visibility: hidden;
+}
+
+.vacantGradient
+{
+fill: #52c234;  /* fallback for old browsers */
+fill: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
+fill: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

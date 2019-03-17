@@ -1,0 +1,30 @@
+<body>
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand">Eagle Smart Parking</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" >Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" >How it Works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/booknow" routerLinkActive="active">Book Now <span class="badge badge-pill badge-success">Live</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+            </li>
+            </ul>
+             <ul class="navbar-nav">
+            <li class="nav-item active">
+                 <a class="btn btn-primary" routerLink="/login" routerLinkActive="active">Login<span class="sr-only">(current)</span></a>
+            </li>
+             </ul>
+        </div>
+        </nav>
+<br/>
+<router-outlet></router-outlet>

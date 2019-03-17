@@ -1,0 +1,26 @@
+<div class="card text-center" style="width:20rem; margin-left:40%; margin-right:40%;">        
+         
+            <div class="card-block" id="loggedOutCard">
+                <h4 class="card-title">Login to Get Started</h4>
+                <p class="card-text">Hassle Free parking is now only a few clicks away!</p>
+                <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input id="user" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">                                                        
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Password</label>
+                            <input id="pass" type="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter password">                                                        
+                        </div>                        
+                </form>
+                <button class="btn btn-primary" (click)="validate()">Login</button><br/><br/>
+                <a href="" class="align-right small">Forgot Password</a>
+            </div>
+
+            <div class="card-block"  id="loggedInCard">
+                <h4 class="card-title">Already Logged In!</h4>
+                <p class="card-text">Click Book Now to Begin..</p>                
+                <button class="btn btn-primary" (click)="logout()">Logout</button><br/><br/>                
+            </div>
+
+</div>

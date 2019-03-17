@@ -1,0 +1,265 @@
+ <div id = "loginRequired" class="card text-center" style="width:20rem; margin-left:40%; margin-right:40%;">        
+                <div class="card-block"  id="loggedInCard">
+                <h4 class="card-title">You need to Login first!</h4>
+                <p class="card-text">Click here to begin</p>                
+                <a  routerLink="/login" class="btn btn-primary">Login</a><br/><br/>                
+                </div>
+</div>
+<div class= "jumbotron" id = "bookingArea">
+<h2>Parking Floor Plan</h2>
+  <p class="lead">Minimize your parking booking hassle! Book your spot now! </p>
+<div class="container-fluid">
+     
+  <div class="row">
+     <div class="col-sm-10">    
+                <div id = "a" class="card text-center">        
+                    <div class="card-block"  id="b">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                                <svg height="410" width="950">                                               
+                                                <g id="fullFigure" fill="grey">                                              
+                                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color:#434343 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#000;stop-opacity:1" />                                                
+                                                </linearGradient>
+                                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#1e130c ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#9a8478;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="occupied" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#a73737 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#7a2828;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="vacant" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#52c234 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#061700;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="selected" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#FF8008 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#FFC837;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="entrance" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#e52d27 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#b31217;stop-opacity:1" />	  
+                                                </linearGradient>
+
+                                                <polyline points="200,350 50,50 250,50 265,80 335,80 320,50 720,50 750,110 600,110 610,130 810,130 920,350"
+                                                style="fill: url(#grad1); stroke-width: 1"/>
+
+                                                <polyline points="200,350 180,400 30,100 50,50 "
+                                                style="fill: url(#grad2); stroke-width: 1"/>
+
+                                                <polyline points="200,350 180,400 900,400 920,350 "
+                                                style="fill: url(#grad2); stroke-width: 1"/>
+
+                                                <polyline points="60,50 190,50 200,70 70,70 60,50"
+                                                style="fill: url(#entrance); stroke-width: 1"/>
+
+                                                <polyline id = "b1p1" points="390,340 360,280 410,280 440,340 390,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>		
+                                                <polyline id = "b1p2" onClick="alert('Spot 1 Clicked!');" points="210,340 180,280 230,280 260,340 210,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p3" onClick="alert('Spot 2 Clicked!');" points="270,340 240,280 290,280 320,340 270,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p4" onClick="alert('Spot 3 Clicked!');" points="330,340 300,280 350,280 380,340 330,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>	
+                                                <polyline id = "b1p5" points="390,340 360,280 410,280 440,340 390,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p6" points="450,340 420,280 470,280 500,340 450,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p7" points="510,340 480,280 530,280 560,340 510,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p8" points="570,340 540,280 590,280 620,340 570,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b1p9" points="630,340 600,280 650,280 680,340 630,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b1p10" points="690,340 660,280 710,280 740,340 690,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b1p11" points="750,340 720,280 770,280 800,340 750,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b1p12"  points="810,340 780,280 830,280 860,340 810,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b1p13" points="210,260 180,200 230,200 260,260 210,260" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b1p14" points="270,260 240,200 290,200 320,260 270,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p15" points="330,260 300,200 350,200 380,260 330,260" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b1p16" points="390,260 360,200 410,200 440,260 390,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p17" points="450,260 420,200 470,200 500,260 450,260" style="fill: url(#selected); stroke:yellow; stroke-width: 1"/>
+                                                <polyline id = "b1p18" points="510,260 480,200 530,200 560,260 510,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p19" points="570,260 540,200 590,200 620,260 570,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p20" points="630,260 600,200 650,200 680,260 630,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p21" points="690,260 660,200 710,200 740,260 690,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b1p22" points="750,260 720,200 770,200 800,260 750,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                </g>
+                                            </svg>
+                        <div class="clearfix"></div>
+                        <h3 style="text-align: center">Basement-1</h3>    
+                    </div>
+                    <div class="carousel-item">                        
+                    <svg height="410" width="950">                                               
+                                                <g id="fullFigure" fill="grey">                                                                                    
+                                                <linearGradient id="2grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color:#434343 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#000;stop-opacity:1" />                                                
+                                                </linearGradient>
+                                                <linearGradient id="2grad2" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#1e130c ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#9a8478;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="2occupied" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#a73737 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#7a2828;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="2vacant" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#52c234 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#061700;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="2selected" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#FF8008 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#FFC837;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="2entrance" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#e52d27 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#b31217;stop-opacity:1" />	  
+                                                </linearGradient>
+
+                                                <polyline points="200,350 50,50 250,50 265,80 335,80 320,50 720,50 750,110 600,110 610,130 810,130 920,350"
+                                                style="fill: url(#2grad1); stroke-width: 1"/>
+
+                                                <polyline points="200,350 180,400 30,100 50,50 "
+                                                style="fill: url(#2grad1); stroke-width: 1"/>
+
+                                                <polyline points="200,350 180,400 900,400 920,350 "
+                                                style="fill: url(#2grad1); stroke-width: 1"/>
+
+                                                <polyline points="60,50 190,50 200,70 70,70 60,50"
+                                                style="fill: url(#2entrance); stroke-width: 1"/>
+
+                                                <polyline id = "b2p1" points="390,340 360,280 410,280 440,340 390,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>		
+                                                <polyline id = "b2p2" onClick="alert('Spot 1 Clicked!');" points="210,340 180,280 230,280 260,340 210,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p3" onClick="alert('Spot 2 Clicked!');" points="270,340 240,280 290,280 320,340 270,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p4" onClick="alert('Spot 3 Clicked!');" points="330,340 300,280 350,280 380,340 330,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>	
+                                                <polyline id = "b2p5" points="390,340 360,280 410,280 440,340 390,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p6" points="450,340 420,280 470,280 500,340 450,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p7" points="510,340 480,280 530,280 560,340 510,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p8" points="570,340 540,280 590,280 620,340 570,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b2p9" points="630,340 600,280 650,280 680,340 630,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b2p10" points="690,340 660,280 710,280 740,340 690,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b2p11" points="750,340 720,280 770,280 800,340 750,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b2p12"  points="810,340 780,280 830,280 860,340 810,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b2p13" points="210,260 180,200 230,200 260,260 210,260" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b2p14" points="270,260 240,200 290,200 320,260 270,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p15" points="330,260 300,200 350,200 380,260 330,260" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b2p16" points="390,260 360,200 410,200 440,260 390,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p17" points="450,260 420,200 470,200 500,260 450,260" style="fill: url(#selected); stroke:yellow; stroke-width: 1"/>
+                                                <polyline id = "b2p18" points="510,260 480,200 530,200 560,260 510,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p19" points="570,260 540,200 590,200 620,260 570,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p20" points="630,260 600,200 650,200 680,260 630,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p21" points="690,260 660,200 710,200 740,260 690,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b2p22" points="750,260 720,200 770,200 800,260 750,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                </g>
+                                            </svg>
+                                                   <div class="clearfix"></div>
+                        <h3 style="text-align: center">Basement-1</h3>    
+                    </div>
+                    <div class="carousel-item">
+                        
+                       <svg height="410" width="950">                                               
+                                                <g id="fullFigure3" fill="grey">                                                                                            
+                                                <linearGradient id="3grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color:#434343 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#000;stop-opacity:1" />                                                
+                                                </linearGradient>
+                                                <linearGradient id="3grad2" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#1e130c ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#9a8478;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="3occupied" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#a73737 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#7a2828;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="3vacant" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#52c234 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#061700;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="3selected" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#FF8008 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#FFC837;stop-opacity:1" />	  
+                                                </linearGradient>
+                                                <linearGradient id="3entrance" x1="0%" y1="0%" x2="100%" y2="50%">
+                                                <stop offset="0%" style="stop-color:#e52d27 ;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#b31217;stop-opacity:1" />	  
+                                                </linearGradient>
+
+                                                <polyline points="200,350 50,50 250,50 265,80 335,80 320,50 720,50 750,110 600,110 610,130 810,130 920,350"
+                                                style="fill: url(#3grad1); stroke-width: 1"/>
+
+                                                <polyline points="200,350 180,400 30,100 50,50 "
+                                                style="fill: url(#3grad1); stroke-width: 1"/>
+
+                                                <polyline points="200,350 180,400 900,400 920,350 "
+                                                style="fill: url(#3grad1); stroke-width: 1"/>
+
+                                                <polyline points="60,50 190,50 200,70 70,70 60,50"
+                                                style="fill: url(#3entrance); stroke-width: 1"/>
+
+                                                <polyline id = "b3p1" points="390,340 360,280 410,280 440,340 390,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>		
+                                                <polyline id = "b3p2" onClick="alert('Spot 1 Clicked!');" points="210,340 180,280 230,280 260,340 210,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p3" onClick="alert('Spot 2 Clicked!');" points="270,340 240,280 290,280 320,340 270,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p4" onClick="alert('Spot 3 Clicked!');" points="330,340 300,280 350,280 380,340 330,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>	
+                                                <polyline id = "b3p5" points="390,340 360,280 410,280 440,340 390,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p6" points="450,340 420,280 470,280 500,340 450,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p7" points="510,340 480,280 530,280 560,340 510,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p8" points="570,340 540,280 590,280 620,340 570,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b3p9" points="630,340 600,280 650,280 680,340 630,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b3p10" points="690,340 660,280 710,280 740,340 690,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b3p11" points="750,340 720,280 770,280 800,340 750,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b3p12"  points="810,340 780,280 830,280 860,340 810,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b3p13" points="210,260 180,200 230,200 260,260 210,260" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b3p14" points="270,260 240,200 290,200 320,260 270,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p15" points="330,260 300,200 350,200 380,260 330,260" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+                                                <polyline id = "b3p16" points="390,260 360,200 410,200 440,260 390,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p17" points="450,260 420,200 470,200 500,260 450,260" style="fill: url(#selected); stroke:yellow; stroke-width: 1"/>
+                                                <polyline id = "b3p18" points="510,260 480,200 530,200 560,260 510,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p19" points="570,260 540,200 590,200 620,260 570,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p20" points="630,260 600,200 650,200 680,260 630,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p21" points="690,260 660,200 710,200 740,260 690,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                <polyline id = "b3p22" points="750,260 720,200 770,200 800,260 750,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+                                                </g>
+                                            </svg>
+                                                   <div class="clearfix"></div>
+                        <h3 style="text-align: center">Basement-1</h3>    
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="color:black"></span>
+                    <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"  style="color:black"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    </div>
+                    </div>
+
+          
+                    
+        </div>
+  <div class="col-sm-2">
+                <div class="card card-inverse" style="background-color: #333; border-color: #333;">
+                    <div class="card-block">
+                        <h3 class="card-title">Basement-1 Slot No. 13</h3>
+                        <p class="card-text"></p>
+                        <h3>This slot is <strong>vacant</strong> for your use.</h3>
+                        <ul>
+                            <li>This is <strong>NOT</strong> a reserved slot for specially abled people.</li>
+                            <li>This is <strong>NOT</strong> a reserved slot for VIP status people.</li>                            
+                            <li>Standard parking charges apply for this slot.</li>
+                        </ul>
+                        <p></p><a class="btn btn-primary" href="#">Book Slot</a>
+                    </div>
+                </div>
+    
+      
+   </div>  
+</div>
+</div>
+
+</div>
+
+
+

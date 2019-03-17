@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Single Floor Parking Plan</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../style/customStyled.css" />
+<style>
+</style>
+<script>
+function functionA()
+{
+console.log("Blah 1");
+var doc1 = document.getElementById("rect1");
+doc1.style.borderColor="blue";
+}
+</script>
+</head>
+<body>
+
+<h1>Parking Floor Plan</h1>
+<svg height="600" width="1500">
+	<g id="fullFigure" fill="grey">
+
+
+		<defs>
+			<marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+			<path d="M0,0 L0,6 L9,3 z" fill="white" />
+			</marker>
+					
+		</defs>
+
+	<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#434343 ;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000;stop-opacity:1" />
+	  
+    </linearGradient>
+
+	
+
+	<linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#1e130c ;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a8478;stop-opacity:1" />	  
+    </linearGradient>
+
+	<linearGradient id="occupied" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#a73737 ;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7a2828;stop-opacity:1" />	  
+    </linearGradient>
+
+	<linearGradient id="vacant" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#52c234 ;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#061700;stop-opacity:1" />	  
+    </linearGradient>
+
+	<linearGradient id="selected" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#FF8008 ;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC837;stop-opacity:1" />	  
+    </linearGradient>
+
+	<linearGradient id="entrance" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#e52d27 ;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b31217;stop-opacity:1" />	  
+    </linearGradient>
+
+<polyline points="200,350 50,50 250,50 265,80 335,80 320,50 720,50 750,110 600,110 610,130 810,130 920,350"
+style="fill: url(#grad1); stroke:grey; stroke-width: 1"/>
+
+<polyline points="200,350 180,400 30,100 50,50 "
+style="fill: url(#grad1); stroke-width: 1"/>
+
+<polyline points="200,350 180,400 900,400 920,350 "
+style="fill: url(#grad1); stroke-width: 1"/>
+
+<polyline points="60,50 190,50 200,70 70,70 60,50"
+style="fill: url(#entrance); stroke-width: 1"/>
+
+  <polyline points="125,50 165,130" stroke="#000" stroke-width="5" style="stroke:white" marker-end="url(#arrow)" />
+
+
+	<polyline points="390,340 360,280 410,280 440,340 390,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>		
+	<polyline onClick="alert('Spot 1 Clicked!');" points="210,340 180,280 230,280 260,340 210,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline onClick="alert('Spot 2 Clicked!');" points="270,340 240,280 290,280 320,340 270,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline onClick="alert('Spot 3 Clicked!');" points="330,340 300,280 350,280 380,340 330,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>	
+	<polyline points="390,340 360,280 410,280 440,340 390,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline points="450,340 420,280 470,280 500,340 450,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline points="510,340 480,280 530,280 560,340 510,340" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline points="570,340 540,280 590,280 620,340 570,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+	<polyline points="630,340 600,280 650,280 680,340 630,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+	<polyline points="690,340 660,280 710,280 740,340 690,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+	<polyline points="750,340 720,280 770,280 800,340 750,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+	<polyline points="810,340 780,280 830,280 860,340 810,340" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+	<polyline points="210,260 180,200 230,200 260,260 210,260" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+	<polyline points="270,260 240,200 290,200 320,260 270,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline points="330,260 300,200 350,200 380,260 330,260" style="fill: url(#occupied); stroke:red; stroke-width: 1"/>
+	<polyline points="390,260 360,200 410,200 440,260 390,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline points="450,260 420,200 470,200 500,260 450,260" style="fill: url(#selected); stroke:yellow; stroke-width: 1"/>
+	<polyline points="510,260 480,200 530,200 560,260 510,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline points="570,260 540,200 590,200 620,260 570,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline points="630,260 600,200 650,200 680,260 630,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline points="690,260 660,200 710,200 740,260 690,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+	<polyline points="750,260 720,200 770,200 800,260 750,260" style="fill: url(#vacant); stroke:green; stroke-width: 1"/>
+
+
+
+
+
+	</g>
+</svg>
+
+</body>
+</html>
